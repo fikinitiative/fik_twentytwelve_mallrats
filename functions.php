@@ -12,10 +12,6 @@ add_action('wp_head', function() {
         }
         restore_current_blog();
     }
-
-    if(!get_option('_fik_parent_store')) {
-        add_option('_fik_parent_store', '162' , '', 'yes');
-    }
 });
 
 /*
