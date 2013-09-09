@@ -10,6 +10,7 @@ add_action('wp_head', function() {
         if ($custom_css !== '') {
           echo ('<style type="text/css" id="fik_custom_css_parent">'.$custom_css.'</style>');
         }
+        add_custom_google_web_fonts();
         restore_current_blog();
     }
 });
